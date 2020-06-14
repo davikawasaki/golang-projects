@@ -1,8 +1,9 @@
-package transform
+package transform_test
 
 import (
+	"nummanip/transform"
 	"reflect"
-	"testing"
+	"testing" // or github.com/<username>/nummanip/v2/transform
 )
 
 // In package list mode, Go caches the only successful test results to avoid repeated running of the same tests.
@@ -15,7 +16,13 @@ func TestTransformSquare(t *testing.T) {
 	testSlice := []int{1, 2, 3, 4, 5}
 	expectedResult := []int{1, 4, 9, 16, 25}
 
-	result := SquareSlice(testSlice)
+	// Storing test data
+	// file, err := os.Open("./testdata/file.go")
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+
+	result := transform.SquareSlice(testSlice)
 
 	if reflect.DeepEqual(expectedResult, result) {
 		t.Log("SquareSlice PASSED")

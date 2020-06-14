@@ -1,4 +1,4 @@
-module nummanip
+module nummanip // or module github.com/<username>/nummanip
 
 go 1.14
 
