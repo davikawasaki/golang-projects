@@ -2,10 +2,9 @@ package main
 
 import "testing"
 
-// test hello function
-func TestHello(t *testing.T) {
+// test hello function with empty argument
+func TestHelloEmptyArg(t *testing.T) {
 	defaultEmptyMsg := "Hello Dude!"
-	defaultMikeMsg := "Hello Mike!"
 
 	// test for empty argument
 	emptyResult := hello("") // should return "Hello Dude!"
@@ -15,6 +14,11 @@ func TestHello(t *testing.T) {
 	} else {
 		t.Logf("hello(\"\") SUCCESS, expected %v, got %v", defaultEmptyMsg, emptyResult)
 	}
+}
+
+// test hello function with valid argument
+func TestHelloValidArg(t *testing.T) {
+	defaultMikeMsg := "Hello Mike!"
 
 	// test for valid argument
 	result := hello("Mike") // should return "Hello Mike!"
