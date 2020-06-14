@@ -1,4 +1,4 @@
-module calc
+module nummanip
 
 go 1.14
 
