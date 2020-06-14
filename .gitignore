@@ -16,3 +16,5 @@
 
 stringparse
 unitests/greetings/greetings
+*.txt
+*.html
