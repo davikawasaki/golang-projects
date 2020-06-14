@@ -1,9 +1,9 @@
 package transform_test
 
 import (
-	"nummanip/transform"
+	"nummanip/transform" // or github.com/<username>/nummanip/v2/transform
 	"reflect"
-	"testing" // or github.com/<username>/nummanip/v2/transform
+	"testing"
 )
 
 // In package list mode, Go caches the only successful test results to avoid repeated running of the same tests.
