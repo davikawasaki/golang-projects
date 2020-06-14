@@ -71,3 +71,24 @@ Testing a specific test:
 $ go test -v -run TestHelloValidArg
 $ $HOME/go/src/github.com/rakyll/gotest/gotest -v -run TestHelloValidArg
 ```
+
+### Testing coverage
+
+```bash
+$ go test -v -cover
+$ $HOME/go/src/github.com/rakyll/gotest/gotest -v -cover
+```
+
+Adding a profile to output information about coverage info in a file:
+
+```bash
+$ mkdir coverage
+$ go test -v -coverprofile=coverage/cover.txt
+$ $HOME/go/src/github.com/rakyll/gotest/gotest -v -coverprofile=coverage/cover.txt
+```
+
+Analyzing coverage information of a test:
+
+```bash
+$ go tool cover -html=coverage/cover.txt -o coverage/cover.html
+```
