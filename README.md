@@ -92,3 +92,15 @@ Analyzing coverage information of a test:
 ```bash
 $ go tool cover -html=coverage/cover.txt -o coverage/cover.html
 ```
+
+### Testing multiple packages inside module with coverage
+
+```bash
+$ go test ./... -v -cover
+```
+
+### Outputing binary from specific package test
+
+```bash
+$ go test -c ./transform
+```
