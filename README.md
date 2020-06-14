@@ -42,9 +42,11 @@ $ cd unitests/greetings
 
 ### Dependencies
 
-- [Aurora](github.com/logrusorgru/aurora)
+- [Aurora](https://github.com/logrusorgru/aurora)
 
-- [Gotest](github.com/rakyll/gotest)
+- [Gotest](https://github.com/rakyll/gotest)
+
+- [ANSI Color Texts](github.com/fatih/color)
 
 ### Building
 
