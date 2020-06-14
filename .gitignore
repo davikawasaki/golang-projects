@@ -18,3 +18,4 @@ stringparse
 unitests/greetings/greetings
 *.txt
 *.html
+*/testdata/*
