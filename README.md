@@ -38,6 +38,12 @@ $ ./stringparse
 $ cd unitests/greetings
 ```
 
+### Dependencies
+
+- [Aurora](github.com/logrusorgru/aurora)
+
+- [Gotest](github.com/rakyll/gotest)
+
 ### Building
 
 ```bash
@@ -56,4 +62,12 @@ $ ./greetings
 
 ```bash
 $ go test -v
+$ $HOME/go/src/github.com/rakyll/gotest/gotest -v 
+```
+
+Testing a specific test:
+
+```bash
+$ go test -v -run TestHelloValidArg
+$ $HOME/go/src/github.com/rakyll/gotest/gotest -v -run TestHelloValidArg
 ```
