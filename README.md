@@ -34,6 +34,8 @@ $ ./stringparse
 
 ## Unit testing
 
+Reference from [Medium blog post](https://medium.com/rungo/unit-testing-made-easy-in-go-25077669318).
+
 ```bash
 $ cd unitests/greetings
 ```
