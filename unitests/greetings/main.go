@@ -7,6 +7,9 @@ import (
 )
 
 func main() {
-	greetMessage := hello("John")
-	fmt.Println(aurora.Yellow(greetMessage))
+	greetMessageEmpty := hello("")
+	fmt.Println(aurora.Green(greetMessageEmpty))
+
+	greetMessageJohn := hello("John")
+	fmt.Println(aurora.Yellow(greetMessageJohn))
 }
